@@ -13,7 +13,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "description": "Ridedott's base config for Renovate[bot].",
+  "description": "Ridedott's base config for Renovate (https://renovatebot.com).",
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
