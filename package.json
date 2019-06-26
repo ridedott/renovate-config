@@ -1,0 +1,52 @@
+{
+  "renovate-config": {
+    "default": {
+      "bumpVersion": "patch",
+      "commitMessageAction": "update",
+      "rangeStrategy": "bump",
+      "rebaseStalePrs": true,
+      "recreateClosed": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "description": "Ridedott's base config for Renovate[bot].",
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "commitizen": "^3.1.1",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,md,yml,yaml}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "name": "@ridedott/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridedott/renovate-config.git"
+  },
+  "scripts": {
+    "cz": "git-cz",
+    "cz:retry": "git-cz --retry",
+    "format": "prettier --check \"**/*.{js,json,md,ts,yml,yaml}\"",
+    "format:fix": "prettier --write \"**/*.{js,json,md,ts,yml,yaml}\""
+  },
+  "version": "0.0.0"
+}
