@@ -78,7 +78,7 @@ to include the options defined as defaults in
 
 ```json
 {
-  "extends": ["@ridedott"],
+  "extends": ["github>ridedott/renovate-config"],
   "packageRules": [
     {
       "enabled": false,
