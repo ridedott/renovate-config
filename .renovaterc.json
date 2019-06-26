@@ -3,5 +3,6 @@
   "commitMessageAction": "update",
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
-  "recreateClosed": true
+  "recreateClosed": true,
+  "postUpdateOptions": ["npmDedupe"]
 }
