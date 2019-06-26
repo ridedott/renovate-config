@@ -1,14 +1,4 @@
 {
-  "renovate-config": {
-    "default": {
-      "bumpVersion": "patch",
-      "commitMessageAction": "update",
-      "rangeStrategy": "bump",
-      "rebaseStalePrs": true,
-      "recreateClosed": true,
-      "postUpdateOptions": ["npmDedupe"]
-    }
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
