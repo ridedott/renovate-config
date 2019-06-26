@@ -1,4 +1,4 @@
-# Contributing to functions
+# Contributing to renovate-config
 
 We'd love for you to contribute to our source code and to make our project even
 better than it is today! Here are the guidelines we'd like you to follow:
@@ -9,11 +9,6 @@ better than it is today! Here are the guidelines we'd like you to follow:
 - [Submission Guidelines](#submit)
 - [Coding Rules](#rules)
 - [Commit Message Guidelines](#commit)
-
-## <a name="question"></a> Got a Question or Problem?
-
-If you have questions about how to use this project, please direct these to our
-[Slack Channel](https://ridedott.slack.com/messages/CDYNSCMJB).
 
 ## <a name="issue"></a> Found an Issue?
 
