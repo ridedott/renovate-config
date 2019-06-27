@@ -1,5 +1,4 @@
 {
-  "bumpVersion": "patch",
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
   "rebaseStalePrs": true,
