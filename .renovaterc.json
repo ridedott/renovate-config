@@ -1,0 +1,4 @@
+{
+  "extends": ["github>ridedott/renovate-config"],
+  "bumpVersion": null
+}

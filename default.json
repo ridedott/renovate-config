@@ -1,0 +1,8 @@
+{
+  "bumpVersion": "patch",
+  "commitMessageAction": "update",
+  "postUpdateOptions": ["npmDedupe"],
+  "rebaseStalePrs": true,
+  "recreateClosed": true,
+  "rangeStrategy": "bump"
+}
