@@ -3,6 +3,5 @@
   "postUpdateOptions": ["npmDedupe"],
   "rebaseStalePrs": true,
   "recreateClosed": true,
-  "rangeStrategy": "bump",
   "skipInstalls": false
 }
