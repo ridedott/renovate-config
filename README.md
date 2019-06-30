@@ -95,6 +95,7 @@ The default configuration is currently set to:
 {
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
+  "rangeStrategy": "bump",
   "rebaseStalePrs": true,
   "recreateClosed": true
 }
