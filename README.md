@@ -72,9 +72,9 @@ pre-releases.
 
 ## Usage
 
-Add a Renovate configuration to your project and use `"extends": ["@ridedott"]`
-to include the options defined as defaults in
-**./package.json/renovate-config/default** configuration:
+Add a Renovate configuration to your project and use
+`"extends": ["github>ridedott/renovate-config"]` to include the options defined
+as defaults in the **./default.json** configuration:
 
 ```json
 {
@@ -86,6 +86,17 @@ to include the options defined as defaults in
       "updateTypes": ["major"]
     }
   ]
+}
+```
+
+The default configuration is currently set to:
+
+```json
+{
+  "commitMessageAction": "update",
+  "postUpdateOptions": ["npmDedupe"],
+  "rebaseStalePrs": true,
+  "recreateClosed": true
 }
 ```
 
