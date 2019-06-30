@@ -2,6 +2,5 @@
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
   "rebaseStalePrs": true,
-  "recreateClosed": true,
-  "skipInstalls": false
+  "recreateClosed": true
 }
