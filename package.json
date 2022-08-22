@@ -16,8 +16,7 @@
   "license": "UNLICENSED",
   "lint-staged": {
     "*.{js,json,md,yml,yaml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "name": "@ridedott/renovate-config",
