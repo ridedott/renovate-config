@@ -29,7 +29,8 @@
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
     "format": "prettier --check \"**/*.{js,json,md,ts,yml,yaml}\"",
-    "format:fix": "prettier --write \"**/*.{js,json,md,ts,yml,yaml}\""
+    "format:fix": "prettier --write \"**/*.{js,json,md,ts,yml,yaml}\"",
+    "prepare": "husky install"
   },
   "version": "0.1.0"
 }
