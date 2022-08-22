@@ -21,12 +21,10 @@
   },
   "license": "UNLICENSED",
   "lint-staged": {
-    "linters": {
-      "*.{js,json,md,yml,yaml}": [
-        "prettier --write",
-        "git add"
-      ]
-    }
+    "*.{js,json,md,yml,yaml}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "name": "@ridedott/renovate-config",
   "repository": {
