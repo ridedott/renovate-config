@@ -6,9 +6,9 @@
   },
   "description": "Ridedott's base config for Renovate (https://renovatebot.com).",
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "commitizen": "^4.0.3",
+    "@commitlint/cli": "^8.3.6",
+    "@commitlint/config-conventional": "^8.3.6",
+    "commitizen": "^4.2.5",
     "husky": "^3.0.2",
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2"
