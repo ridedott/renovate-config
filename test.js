@@ -1,1 +1,1 @@
-const formatting =  1234;
+const formatting = 1234;
