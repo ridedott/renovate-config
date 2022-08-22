@@ -93,6 +93,7 @@ The default configuration is currently set to:
 
 ```json
 {
+  "automergeSchedule": ["after 9am and before 4pm every weekday"],
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
