@@ -9,15 +9,9 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "commitizen": "^4.2.5",
-    "husky": "^3.0.2",
+    "husky": "^8.0.1",
     "lint-staged": "^9.2.1",
     "prettier": "^2.7.1"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "license": "UNLICENSED",
   "lint-staged": {
