@@ -41,6 +41,7 @@ Go the the right directory and install dependencies:
 
 ```bash
 cd renovate-config
+nvm use
 npm install
 ```
 
