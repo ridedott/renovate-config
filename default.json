@@ -1,4 +1,5 @@
 {
+  "automergeSchedule": ["after 10am and before 4pm every weekday"],
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",

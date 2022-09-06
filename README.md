@@ -74,12 +74,12 @@ pre-releases.
 ## Usage
 
 Add a Renovate configuration to your project and use
-`"extends": ["github>ridedott/renovate-config"]` to include the options defined
+`"extends": ["local>ridedott/renovate-config"]` to include the options defined
 as defaults in the **./default.json** configuration:
 
 ```json
 {
-  "extends": ["github>ridedott/renovate-config"],
+  "extends": ["local>ridedott/renovate-config"],
   "packageRules": [
     {
       "enabled": false,
@@ -94,6 +94,7 @@ The default configuration is currently set to:
 
 ```json
 {
+  "automergeSchedule": ["after 10am and before 4pm every weekday"],
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
