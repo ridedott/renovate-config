@@ -74,12 +74,12 @@ pre-releases.
 ## Usage
 
 Add a Renovate configuration to your project and use
-`"extends": ["local>ridedott/renovate-config"]` to include the options defined
+`"extends": ["github>ridedott/renovate-config"]` to include the options defined
 as defaults in the **./default.json** configuration:
 
 ```json
 {
-  "extends": ["local>ridedott/renovate-config"],
+  "extends": ["github>ridedott/renovate-config"],
   "packageRules": [
     {
       "enabled": false,
