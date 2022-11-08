@@ -99,9 +99,18 @@ The default configuration is currently set to:
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
-  "recreateClosed": true
+  "recreateClosed": true,
+  "schedule": ["after 10am and before 4pm every weekday"]
 }
 ```
+
+We use the merge-me github action to auto merge PRs and the 
+hosted renovate bot which runs 24/7 we need to use the `schedule` configuration 
+above to ensure that renovate only runs between the desired hours. Not having 
+this configuration allows renovate bot to rebase PRs outside the specified 
+hours which potentially leads to the CI becoming green and merge-me auto 
+merging the PR. Which led to outages of breaking runtimes that we didn't
+catch.
 
 ## Contributing
 
