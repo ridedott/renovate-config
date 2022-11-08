@@ -100,14 +100,16 @@ The default configuration is currently set to:
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
   "recreateClosed": true,
-  /* 
-   * This schedule is to overcome prs being rebased outside this 
-   * time and merge-me action merging these as the actions flow 
-   * is green.
-   */
   "schedule": ["after 10am and before 4pm every weekday"]
 }
 ```
+
+We use the merge-me github action to auto merge PRs and the 
+hosted renovate bot which runs 24/7 we need to use the `schedule` configuration 
+above to ensure that renovate only runs between the desired hours. Not having 
+this configuration allows renovate bot to rebase PRs outside the specified 
+hours which potentially leads to the CI becoming green and merge-me auto 
+merging the PR.
 
 ## Contributing
 
