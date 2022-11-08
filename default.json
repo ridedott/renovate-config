@@ -4,5 +4,6 @@
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
-  "recreateClosed": true
+  "recreateClosed": true,
+  "schedule": ["after 10am and before 4pm every weekday"]
 }
