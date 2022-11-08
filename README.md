@@ -99,7 +99,13 @@ The default configuration is currently set to:
   "postUpdateOptions": ["npmDedupe"],
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
-  "recreateClosed": true
+  "recreateClosed": true,
+  /* 
+   * This schedule is to overcome prs being rebased outside this 
+   * time and merge-me action merging these as the actions flow 
+   * is green.
+   */
+  "schedule": ["after 10am and before 4pm every weekday"]
 }
 ```
 
