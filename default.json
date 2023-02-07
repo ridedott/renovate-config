@@ -1,4 +1,8 @@
 {
+  "npmrc": "@ridedott:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NPM_TOKEN}",
+  "encrypted": {
+    "npmToken": "wcFMA/xDdHCJBTolAQ/+JCCK0fYKPXwEcQdxafXp6b8MhfEvUDJoI/TtlzFoTjWJEyiYS+mHhWWmVHFDYOD+QRfTlZtGWZ2SUJIFmxvRTFJ7OAE+PYB+CJphE7tW2OzUeAF63mza+ME5v79rETQzErBrLWTERw7KAoFxj1cP6kvfDo2DBJbeV+ZVW3Z1Hv/iOyks+2Q92tfDreFgzI5+Ne5B+iMaeSpqw9t1T1zz16u7GIfXQPGw9VguFRW7JoWVL/fNJV+vROgyr2ZCb3kihks+95I3eg/wKeK/n7fBmFS3zezJsmpkqbB8EkRKzNP2bgzgskR631hqL9KpBJeH8noqeNyLtjlRhudapiwox66QrpchlUmd6AeFyltu9z+VRE6/PUxWWqEb+m+HuZz0foAl6JeAX+VLbPo61PbGAcNnaex4rAQB3n6k2uppbbuqaLt5Pe5vytUiG5dUJCgron5naFDLl8Ygwq1Dz13GfeCps20znrdSSFcwCljoSjV+B0qgEnVUxTKk0AWIJWj43nw0p3oOiOvlDXIvZM6jt6YVqqGgKBjmtSBVWm/Rksdq47g8UvmjOcaO0DIb3UlTYyqKbE8xMJE5zZWdqs9k0RZK7+Bnldj/D28Ww978YMpIZgeSz+7qdfpD2OtxUfNufBENCUcrbig3QAeoPw5G5+RWLO0c7+vmgFse16mNpnPSdwHOyba/YuGpyLpecFDF3Vhzf7Uc0XZ5RijFxpJRQmwtDktevRDuzWdoKCnB7rITeQMjh0QKADMuVBeOI5fDh6rkDPZvYZ5+uDWEP+AhYeA1hP1cRt1LZhjmiwwj6RBjc/tKSS3TPmNJJ21BXLAHcn+zeG8Zq9YF"
+  },
   "automergeSchedule": ["after 10am and before 4pm every weekday"],
   "commitMessageAction": "update",
   "postUpdateOptions": ["npmDedupe"],
