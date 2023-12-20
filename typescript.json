@@ -1,0 +1,89 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "commitMessageAction": "update",
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "enabledManagers": ["npm", "github-actions", "dockerfile"],
+  "extends": [
+    ":approveMajorUpdates",
+    ":automergeAll",
+    ":combinePatchMinorReleases",
+    ":prConcurrentLimit10",
+    ":prHourlyLimit4",
+    ":prNotPending",
+    "group:nodeJs",
+    "npm:unpublishSafe",
+    "workarounds:typesNodeVersioning"
+  ],
+  "internalChecksAsSuccess": true,
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "commitMessagePrefix": "chore(deps-dev): ",
+      "description": "Change default commit prefix to match Dependabot",
+      "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "description": "Allow immediate updates of Dott packages",
+      "matchPackagePrefixes": ["@ridedott"],
+      "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "Group all non-breaking updates in production dependencies",
+      "groupName": "production dependencies",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "Group all non-breaking updates in development dependencies",
+      "excludePackageNames": ["@types/node"],
+      "groupName": "development dependencies",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "dependencyDashboardApproval": false,
+      "description": "Group all @typescript-eslint updates",
+      "groupName": "Typescript ESLint",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePrefixes": ["@typescript-eslint"],
+      "matchUpdateTypes": ["major", "minor", "patch"]
+    },
+    {
+      "dependencyDashboardApproval": false,
+      "description": "Group all Jest related updates",
+      "groupName": "Jest environment",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchPackageNames": [
+        "@jest/globals",
+        "@types/jest",
+        "jest",
+        "jest-environment-node",
+        "jest-mock",
+        "ts-jest"
+      ]
+    },
+    {
+      "description": "Group all non-major GRPC related updates",
+      "groupName": "Non major GRPC",
+      "matchPackagePrefixes": ["@bufbuild", "@connectrpc"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "Group all major GRPC related updates",
+      "groupName": "Major GRPC",
+      "matchPackagePrefixes": ["@bufbuild", "@connectrpc"],
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "dependencyDashboardApproval": true,
+      "description": "Require approval for engine updates",
+      "matchDepTypes": ["engines"]
+    }
+  ],
+  "schedule": ["after 10:30am and before 12:30am on Tuesday"],
+  "timezone": "Europe/Amsterdam",
+  "updatePinnedDependencies": false
+}
