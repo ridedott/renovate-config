@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "commitMessageAction": "update",
+  "commitMessageAction": "bump",
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "enabledManagers": ["npm", "github-actions", "dockerfile"],
@@ -22,6 +22,11 @@
       "commitMessagePrefix": "chore(deps-dev): ",
       "description": "Change default commit prefix to match Dependabot",
       "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "commitMessagePrefix": "chore(deps): ",
+      "description": "Change default commit prefix to match Dependabot",
+      "matchDepTypes": ["dependencies"]
     },
     {
       "matchDatasources": ["npm"],
