@@ -87,7 +87,7 @@
       "matchDepTypes": ["engines"]
     }
   ],
-  "schedule": ["after 10:30am and before 12:30am on Tuesday"],
+  "schedule": ["after 10:30am and before 12:30pm on Tuesday"],
   "timezone": "Europe/Amsterdam",
   "updatePinnedDependencies": false
 }
