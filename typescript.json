@@ -61,12 +61,11 @@
       "groupName": "Jest environment",
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchPackagePatterns": [ "jest-*" ],
       "matchPackageNames": [
         "@jest/globals",
         "@types/jest",
         "jest",
-        "jest-environment-node",
-        "jest-mock",
         "ts-jest"
       ]
     },
