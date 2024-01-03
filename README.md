@@ -74,12 +74,15 @@ pre-releases.
 ## Usage
 
 Add a Renovate configuration to your project and use
-`"extends": ["local>ridedott/renovate-config"]` to include the options defined
+`"extends": ["github>ridedott/renovate-config"]` to include the options defined
 as defaults in the **./default.json** configuration:
+
+If you are working in a TypeScript project we recommend using the `typescript`
+preset by extending from `gihub>ridedott/renovate-config:typescript` instead.
 
 ```json
 {
-  "extends": ["local>ridedott/renovate-config"],
+  "extends": ["github>ridedott/renovate-config:typescript"],
   "packageRules": [
     {
       "enabled": false,
@@ -90,27 +93,12 @@ as defaults in the **./default.json** configuration:
 }
 ```
 
-The default configuration is currently set to:
-
-```json
-{
-  "automergeSchedule": ["after 10am and before 4pm every weekday"],
-  "commitMessageAction": "update",
-  "postUpdateOptions": ["npmDedupe"],
-  "rangeStrategy": "bump",
-  "rebaseStalePrs": true,
-  "recreateClosed": true,
-  "schedule": ["after 10am and before 4pm every weekday"]
-}
-```
-
-We use the merge-me github action to auto merge PRs and the 
-hosted renovate bot which runs 24/7 we need to use the `schedule` configuration 
-above to ensure that renovate only runs between the desired hours. Not having 
-this configuration allows renovate bot to rebase PRs outside the specified 
-hours which potentially leads to the CI becoming green and merge-me auto 
-merging the PR. Which led to outages of breaking runtimes that we didn't
-catch.
+We use the merge-me github action to auto merge PRs and the hosted renovate bot
+which runs 24/7 we need to use the `schedule` configuration to ensure that
+renovate only runs between the desired hours. Not having this configuration
+allows renovate bot to rebase PRs outside the specified hours which potentially
+leads to the CI becoming green and merge-me auto merging the PR. Which led to
+outages of breaking runtimes that we didn't catch.
 
 ## Contributing
 

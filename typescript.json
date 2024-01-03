@@ -61,13 +61,8 @@
       "groupName": "Jest environment",
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchPackagePatterns": [ "jest-*" ],
-      "matchPackageNames": [
-        "@jest/globals",
-        "@types/jest",
-        "jest",
-        "ts-jest"
-      ]
+      "matchPackagePatterns": ["jest-*"],
+      "matchPackageNames": ["@jest/globals", "@types/jest", "jest", "ts-jest"]
     },
     {
       "description": "Group all non-major GRPC related updates",
