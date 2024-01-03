@@ -78,7 +78,7 @@ Add a Renovate configuration to your project and use
 as defaults in the **./default.json** configuration:
 
 If you are working in a TypeScript project we recommend using the `typescript`
-preset by extending from `gihub>ridedott/renovate-config:typescript` instead.
+preset by extending from `github>ridedott/renovate-config:typescript` instead.
 
 ```json
 {
