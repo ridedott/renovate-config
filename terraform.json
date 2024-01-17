@@ -9,6 +9,7 @@
       "addLabels": ["terraform", "{{depName}}"],
       "matchManagers": ["terraform"],
       "matchDatasources": ["terraform-provider"],
+      "groupName": "{{{replace '-beta$' '' depName}}}",
       "dependencyDashboardApproval": false
     }
   ]
