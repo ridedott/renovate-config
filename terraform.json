@@ -11,44 +11,6 @@
       "matchDatasources": ["terraform-provider"],
       "groupName": "{{{replace '-beta$' '' depName}}}",
       "dependencyDashboardApproval": false
-    },
-    {
-      "addLabels": ["terraform", "github"],
-      "matchManagers": ["terraform"],
-      "matchDatasources": ["terraform-provider"],
-      "matchPackageNames": ["github"],
-      "groupName": "terraform github provider updates",
-      "dependencyDashboardApproval": false
-    },
-    {
-      "addLabels": ["terraform", "googleworkspace"],
-      "matchManagers": ["terraform"],
-      "matchDatasources": ["terraform-provider"],
-      "matchPackageNames": ["googleworkspace"],
-      "groupName": "terraform googleworkspace provider updates",
-      "dependencyDashboardApproval": false
-    },
-    {
-      "addLabels": ["terraform", "google"],
-      "matchManagers": ["terraform"],
-      "matchDatasources": ["terraform-provider"],
-      "matchPackageNames": ["google", "google-beta"],
-      "groupName": "terraform google provider updates",
-      "dependencyDashboardApproval": false
-    },
-    {
-      "addLabels": ["terraform", "basistheory"],
-      "matchManagers": ["terraform"],
-      "matchDatasources": ["terraform-provider"],
-      "matchPackageNames": ["basistheory"],
-      "groupName": "terraform basistheory provider updates",
-      "dependencyDashboardApproval": false
-    },
-    {
-      "addLabels": ["github-actions"],
-      "matchManagers": ["github-actions"],
-      "groupName": "github Actions updates",
-      "dependencyDashboardApproval": false
     }
   ]
 }
