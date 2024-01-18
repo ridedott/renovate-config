@@ -1,16 +1,10 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
   "labels": ["dependencies"],
+  "schedule": ["after 10:30am and before 12:30am on Monday"],
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardApproval": true,
   "commitMessagePrefix": "chore(deps): \uD83D\uDC77 ",
   "separateMajorMinor": false,
-  "packageRules": [
-    {
-      "addLabels": ["terraform", "{{depName}}"],
-      "matchManagers": ["terraform"],
-      "matchDatasources": ["terraform-provider"],
-      "groupName": "{{{replace '-beta$' '' depName}}}",
-      "dependencyDashboardApproval": false
-    }
-  ]
 }
