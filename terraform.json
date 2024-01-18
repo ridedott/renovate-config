@@ -6,5 +6,5 @@
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardApproval": true,
   "commitMessagePrefix": "chore(deps): \uD83D\uDC77 ",
-  "separateMajorMinor": false,
+  "separateMajorMinor": false
 }
