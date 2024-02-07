@@ -13,6 +13,7 @@
     ":prNotPending",
     "group:nodeJs",
     "npm:unpublishSafe",
+    "workarounds:nodeDockerVersioning",
     "workarounds:typesNodeVersioning"
   ],
   "internalChecksAsSuccess": true,
@@ -80,9 +81,13 @@
       "dependencyDashboardApproval": true,
       "description": "Require approval for engine updates",
       "matchDepTypes": ["engines"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "updatePinnedDependencies": false
     }
   ],
   "schedule": ["after 10:30am and before 12:30pm on Tuesday"],
   "timezone": "Europe/Amsterdam",
-  "updatePinnedDependencies": false
+  "updatePinnedDependencies": true
 }
