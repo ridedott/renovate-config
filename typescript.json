@@ -12,7 +12,6 @@
     ":prHourlyLimit4",
     ":prNotPending",
     "group:nodeJs",
-    "npm:unpublishSafe",
     "workarounds:typesNodeVersioning"
   ],
   "internalChecksAsSuccess": true,
