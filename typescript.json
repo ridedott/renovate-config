@@ -87,6 +87,7 @@
       "updatePinnedDependencies": false
     }
   ],
+  "rangeStrategy": "bump",
   "schedule": ["after 10:30am and before 12:30pm on Tuesday"],
   "timezone": "Europe/Amsterdam",
   "updatePinnedDependencies": true
