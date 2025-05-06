@@ -5,5 +5,6 @@
   "rangeStrategy": "bump",
   "rebaseStalePrs": true,
   "recreateClosed": true,
-  "schedule": ["after 10am and before 4pm every weekday"]
+  "schedule": ["after 10am and before 4pm every weekday"],
+  "npmToken": "{{ secrets.GITHUB_TOKEN_DOTT_BOT }}"
 }
