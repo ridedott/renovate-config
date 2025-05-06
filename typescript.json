@@ -4,6 +4,7 @@
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "enabledManagers": ["npm", "github-actions", "dockerfile"],
+  "npmToken": "{{ secrets.GITHUB_TOKEN_DOTT_BOT }}",
   "extends": [
     ":approveMajorUpdates",
     ":automergeAll",
