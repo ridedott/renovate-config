@@ -11,7 +11,7 @@
     "commitizen": "^4.2.5",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.8"
   },
   "license": "UNLICENSED",
   "lint-staged": {
