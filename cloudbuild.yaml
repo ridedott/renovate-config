@@ -1,10 +1,10 @@
 steps:
-  - name: node:10
+  - name: node:24
     id: dependencies
     entrypoint: npm
     args:
       - ci
-  - name: node:10
+  - name: node:24
     id: format
     waitFor:
       - dependencies
