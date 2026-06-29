@@ -8,9 +8,7 @@
   "separateMajorMinor": false,
   "lockFileMaintenance": { "enabled": true },
   "terraform": {
-    "fileMatch": [
-      "\\.tf$"
-    ],
+    "fileMatch": ["\\.tf$"],
     "versioning": "regex:^((?<compatibility>.*)-v|v*)(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
   }
 }
